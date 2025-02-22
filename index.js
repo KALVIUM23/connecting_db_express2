@@ -29,7 +29,7 @@ app.post("/api/user",async(req,res)=>{
    try {
      const user = new userModel(req.body)
      await user.save()
-     res.status(201).json({message:"created"})
+     res.status(201).json({message:"created.."})
    } catch (error) {
      if(error.name=="ValidationError"){
         
